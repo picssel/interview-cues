@@ -1,0 +1,42 @@
+.general-topics {
+  position: relative;
+
+  .topic-heading {
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      content: "";
+      opacity: 0.9;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid;
+      margin: 0 4px;
+      color: #2a2a2a;
+    }
+
+    &.active::after {
+      border-top: 0;
+      border-bottom: 5px solid;
+    }
+  }
+
+  .indices-list {
+    padding-left: 24px;
+    height: 0;
+    overflow: hidden;
+
+    &.active {
+      height: auto;
+    }
+  }
+}

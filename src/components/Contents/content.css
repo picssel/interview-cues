@@ -1,0 +1,7 @@
+.contents {
+  padding: 16px 64px;
+
+  > div {
+    padding-left: 16px;
+  }
+}

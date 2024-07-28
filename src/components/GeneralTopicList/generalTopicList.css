@@ -1,0 +1,16 @@
+.topic-list {
+  cursor: pointer;
+  min-width: 250px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  & .description {
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+  }
+}
